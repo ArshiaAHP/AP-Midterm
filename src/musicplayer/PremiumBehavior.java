@@ -16,7 +16,6 @@ public class PremiumBehavior implements UserBehavior{
         }
 
         Playlist newPlaylist = new Playlist(title, owner);
-        owner.getPlaylists().add(newPlaylist);
     }
 
     @Override

@@ -17,6 +17,7 @@ public class Playlist {
         this.title = title;
         this.owner = owner;
         this.playlist = new ArrayList<>();
+        owner.getPlaylists().add(this);
     }
 
     private void authenticate(String password) throws InvalidOperationException { //for checking if pass is correct, clean code :)

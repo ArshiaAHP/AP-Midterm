@@ -28,7 +28,7 @@ public class Music {
         this.numberOfStream++;
     }
 
-    public static List<Music> search(String title) {
+    public static ArrayList<Music> search(String title) {
         if (title == null) {
             throw new InvalidOperationException("Title cannot be null");
         }

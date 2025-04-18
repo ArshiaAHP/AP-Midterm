@@ -17,6 +17,11 @@ public class User {
                 throw new InvalidOperationException("Username already exists.");
             }
         }
+
+        if(username == null || username.isEmpty()){
+            throw new InvalidOperationException("Username cannot be empty or null.");
+        }
+
         if (password == null || password.length() < 8) {
             throw new InvalidOperationException("Password must be at least 8 characters long");
         }
@@ -47,8 +52,8 @@ public class User {
         }
     }
 
-    public void createPlaylist(String title, User owner) {
-        this.behavior.createPlaylist(title, owner);
+    public void createPlaylist(String title) {
+        this.behavior.createPlaylist(title, this);
     }
 
     public void playMusic(Music music) {
