@@ -26,7 +26,6 @@ public class PremiumBehavior implements UserBehavior{
         }
 
         music.play();
-        System.out.println("Playing " + music.getTitle() + " (Premium user - no limits)");
     }
 
     @Override
