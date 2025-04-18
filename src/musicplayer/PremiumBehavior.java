@@ -15,6 +15,12 @@ public class PremiumBehavior implements UserBehavior{
             throw new InvalidOperationException("Owner cannot be null");
         }
 
+        for(Playlist playlist : owner.getPlaylists()){
+            if(title.equals(playlist.getTitle())){
+                throw new InvalidOperationException("Playlist with this name already exists.");
+            }
+        }
+
         Playlist newPlaylist = new Playlist(title, owner);
     }
 

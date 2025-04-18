@@ -38,6 +38,11 @@ public class Main {
         System.out.println("\n$$$ Upgrade to premium and Test $$$");
         user1.buyPremium(user1, 3);
         user1.createPlaylist("Premium playlist");
+        try {
+            user1.createPlaylist("Premium playlist"); //duplicate playlist.
+        }catch (InvalidOperationException e){
+            System.out.println("*ERROR: " + e.getMessage());
+        }
         user1.playMusic(song1);
         user1.playMusic(song3);
         user1.playMusic(song1);
