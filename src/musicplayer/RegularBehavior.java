@@ -11,7 +11,7 @@ public class RegularBehavior implements UserBehavior{
     @Override
     public void playMusic(Music music) {
         if(playingLimit > 0){
-            Music.play(music);
+            music.play();
             playingLimit--;
         }else{
             throw new InvalidOperationException("Playing limit reached.");
