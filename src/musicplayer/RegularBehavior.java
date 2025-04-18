@@ -22,4 +22,13 @@ public class RegularBehavior implements UserBehavior{
     public void buyPremium(User owner, int month) {
         owner.setBehavior(new PremiumBehavior(month));
     }
+
+    public int getPlayingLimit() {
+        return playingLimit;
+    }
+
+    public void setPlayingLimit(int playingLimit) {
+        this.playingLimit = playingLimit;
+    }
+
 }

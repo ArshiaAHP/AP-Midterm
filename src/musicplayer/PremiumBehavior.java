@@ -37,4 +37,12 @@ public class PremiumBehavior implements UserBehavior{
         this.month += month;
         System.out.println("Premium extended for " + month + " months. Total remaining: " + this.month);
     }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getMonth() {
+        return month;
+    }
 }

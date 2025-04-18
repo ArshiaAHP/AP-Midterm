@@ -63,4 +63,31 @@ public class Music {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public static ArrayList<Music> getAllMusics() {
+        return allMusics;
+    }
+
+    public static void setAllMusics(ArrayList<Music> allMusics) {
+        Music.allMusics = allMusics;
+    }
+
+    public int getNumberOfStream() {
+        return numberOfStream;
+    }
+
+    public void setNumberOfStream(int numberOfStream) {
+        this.numberOfStream = numberOfStream;
+    }
+
+    public User getSinger() {
+        return singer;
+    }
+
+    public void setSinger(User singer) {
+        this.singer = singer;
+    }
 }

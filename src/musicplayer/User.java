@@ -71,4 +71,47 @@ public class User {
         this.behavior = behavior;
     }
 
+    public UserBehavior getBehavior() {
+        return behavior;
+    }
+
+    public static ArrayList<User> getAllUsers() {
+        return allUsers;
+    }
+
+    public ArrayList<Playlist> getPlaylists() {
+        return playlists;
+    }
+
+    public ArrayList<User> getFollowerList() {
+        return followerList;
+    }
+
+    public ArrayList<User> getFollowingList() {
+        return followingList;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public static void setAllUsers(ArrayList<User> allUsers) {
+        User.allUsers = allUsers;
+    }
+
+    public void setFollowerList(ArrayList<User> followerList) {
+        this.followerList = followerList;
+    }
+
+    public void setFollowingList(ArrayList<User> followingList) {
+        this.followingList = followingList;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setPlaylists(ArrayList<Playlist> playlists) {
+        this.playlists = playlists;
+    }
 }
