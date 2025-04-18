@@ -16,7 +16,6 @@ public class PremiumBehavior implements UserBehavior{
         }
 
         Playlist newPlaylist = new Playlist(title, owner);
-        owner.getPlaylists().add(newPlaylist);
     }
 
     @Override
@@ -26,7 +25,6 @@ public class PremiumBehavior implements UserBehavior{
         }
 
         music.play();
-        System.out.println("Playing " + music.getTitle() + " (Premium user - no limits)");
     }
 
     @Override
@@ -37,5 +35,13 @@ public class PremiumBehavior implements UserBehavior{
 
         this.month += month;
         System.out.println("Premium extended for " + month + " months. Total remaining: " + this.month);
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getMonth() {
+        return month;
     }
 }
