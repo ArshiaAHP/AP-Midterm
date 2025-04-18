@@ -121,4 +121,28 @@ public class Playlist {
             music.play();
         }
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public ArrayList<Music> getPlaylist() {
+        return playlist;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setPlaylist(ArrayList<Music> playlist) {
+        this.playlist = playlist;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
+    }
 }
